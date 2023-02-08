@@ -15,7 +15,7 @@ module.exports = {
   },
 
   output: {
-    publicPath: "http://localhost:7001/",
+    publicPath: "http://localhost:7002/",
   },
 
   resolve: {
@@ -55,10 +55,10 @@ module.exports = {
       name: "calendar",
       filename: "remoteEntry.js",
       remotes: {
+        calendar: "calendar@http://localhost:7001/remoteEntry.js",
       },
       exposes: {
-        "./Calendar": "./src/Calendar",
-        "./utils": "./src/utils",
+        "./VacationPlanner": "./src/VacationPlanner",
       },
       shared: {
         ...deps,
