@@ -104,7 +104,7 @@ const Calendar = ({
                         currentVacationDays
                       )),
                 },
-                'p-2  w-8 h-8 flex items-center justify-center'
+                'p-2 w-8 h-8 flex items-center justify-center'
               );
               return (
                 <div className='py-1 w-1/12'>

@@ -55,13 +55,6 @@ const buildMonthMatrix = (month) => {
   return monthRows;
 };
 
-const getUserVacationDaysInMonth = (user, month) =>
-  (user?.vacations || []).filter(
-    (vacation) =>
-      dayjs(vacation.startDate).month() === month ||
-      dayjs(vacation.endDate).month() === month
-  );
-
 const isVacationDay = (day, month, vacationDays) =>
   (vacationDays || []).find(
     (vacation) =>
@@ -88,7 +81,6 @@ export {
   isVacationDay,
   dateFormatter,
   buildMonthMatrix,
-  getUserVacationDaysInMonth,
   getStartOfMonth,
   getEndOfMonth,
   getDaysInMonth,
