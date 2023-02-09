@@ -16,7 +16,7 @@ const LABELS = {
 };
 
 const WEEK_DAYS = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];
-const HOLIDAYS_URL =  'http://127.0.0.1:3001';
-const WORKDAYS_URL =  'http://127.0.0.1:3001';
+const HOLIDAYS_URL =  'http://0.0.0.0:5001';
+const WORKDAYS_URL =  'http://0.0.0.0:5002';
 
 export { LABELS, WEEK_DAYS, HOLIDAYS_URL, WORKDAYS_URL };
