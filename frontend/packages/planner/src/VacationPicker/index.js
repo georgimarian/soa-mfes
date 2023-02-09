@@ -70,8 +70,8 @@ const VacationPicker = ({ users, currentUser, setCurrentUser }) => {
             className='rounded-xl w-full h-11 p-2 bg-slate-100'
             type='date'
             disabled={!currentUser}
-            min='2021-01-01'
-            max='2021-12-31'
+            min='2022-01-01'
+            max='2022-12-31'
             value={startDate}
             onChange={(event) => setStartDate(event.target.value)}
           />
@@ -83,8 +83,8 @@ const VacationPicker = ({ users, currentUser, setCurrentUser }) => {
             className='rounded-xl w-full h-11 p-2 bg-slate-100'
             type='date'
             disabled={!currentUser}
-            min='2021-01-01'
-            max='2021-12-31'
+            min='2022-01-01'
+            max='2022-12-31'
             value={endDate}
             onChange={(e) => setEndDate(e.target.value)}
           />
