@@ -26,6 +26,7 @@
     "start": "webpack --watch",
     "build": "webpack --mode production",
     "serve": "serve dist -p 7002",
+    "prod": "node server.js",
     "storybook": "start-storybook -p 6007"
   },
   "eslintConfig": {

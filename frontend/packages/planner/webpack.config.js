@@ -15,7 +15,7 @@ module.exports = {
   },
 
   output: {
-    publicPath: "http://localhost:7002/",
+    publicPath: "http://0.0.0.0:7200/",
   },
 
   resolve: {
