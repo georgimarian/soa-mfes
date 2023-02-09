@@ -1,5 +1,5 @@
-import { URL } from './constants';
-import { dateFormatter } from '../utils';
+import { HOLIDAYS_URL, WORKDAYS_URL } from './constants';
+import { dateFormatter } from '.';
 
 const HEADERS = {
   Accept: 'application/json',
@@ -11,7 +11,7 @@ const YEAR = 2022;
 
 const getNationalHolidays = (currentDate) =>
   fetch(
-    `${URL}/holidays?${new URLSearchParams({
+    `${HOLIDAYS_URL}/holidays?${new URLSearchParams({
       country: 'DE',
       year: YEAR,
       month: currentDate.month() + 1,
@@ -24,7 +24,7 @@ const getNationalHolidays = (currentDate) =>
 
 const getWorkingDaysBetweenDates = (startDate, endDate) =>
   fetch(
-    `${URL}/workdays?${new URLSearchParams({
+    `${WORKDAYS_URL}/workdays?${new URLSearchParams({
       country: 'DE',
       start: dateFormatter(startDate, 'fr-CA', {
         year: 'numeric',
