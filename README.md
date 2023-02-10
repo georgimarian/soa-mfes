@@ -16,9 +16,14 @@ Split the planner into the calendar and the wrapper. The calendar is its own app
 For backend, I used The list of public holidays coming from [Holiday API](https://holidayapi.com/countries/de/2022).
 The backend is split into two express applications, weekdays and holidays. Both (unfortunately) call the holiday API, but handle different aspects of it. 
 
-## Third party library
+## Third party library integration
 
 The application calls the Holiday API, as mentioned above.
+For CSS, tailwind was used. However, a problem which appeared was that tailwind generates one CSS file per project based on the classes used in the code. However, in the micro frontend scenario where app 1 imports app 2, only one CSS file is generated and the app 2's CSS is not being imported.
+
+## Containers
+
+Docker containers were used for all four of the FE and BE apps.
 
 ## Diagrams
 ### UML Diagram
