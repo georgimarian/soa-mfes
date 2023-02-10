@@ -28,3 +28,7 @@ Docker containers were used for all four of the FE and BE apps.
 ## Diagrams
 ### UML Diagram
 ![Diagram](./assets/soa-uml.png?raw=true "Title")
+
+### C4 Diagram
+[C4 diagram](./assets/c4.pdf)
+
